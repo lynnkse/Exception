@@ -2,8 +2,6 @@
 #include <cstring>
 #include "TException_t.h"
 
-#define THROW(T, i, msg) do{T num(i); string str(msg); TException_t<T> ex(str, num, __FILE__, __LINE__); throw(ex); } while(0)  
-
 using namespace std;
 
 int main()
